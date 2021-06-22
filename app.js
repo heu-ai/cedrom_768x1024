@@ -111,7 +111,7 @@ function page1func(op){
     document.getElementById("enviar").disabled = true;
 
     var screen2 = document.getElementById("screen2");
-    screen2.style = "position: absolute; top: 456px; left: 36px; height: 34px; background: transparent; width: 232px; border-radius: 2%; border: 1px solid transparent;";
+    screen2.style = "position: absolute;top: 655px;left: 127px;height: 75px;background: transparent;width: 510px;border-radius: 2%;border: 1px solid transparent;";
     screen2.onclick= function(){
                                     APICall("page1");
                                     op.src = imges[1];
@@ -119,14 +119,14 @@ function page1func(op){
                                 };
 
     var site = document.getElementById("site");
-    site.style = "position: absolute; top: 503px; left: 36px; height: 34px; background: transparent; width: 232px; border-radius: 2%; border: 1px solid transparent;";
+    site.style = "position: absolute;top: 756px;left: 127px;height: 75px;background: transparent;width: 510px;border-radius: 2%;border: 1px solid transparent;";
     site.onclick = function(){
                                 APICall("page2leftkey1");
                                 window.open(landing_page);
                                };
 
     var screen3 = document.getElementById("screen3");
-    screen3.style = "position: absolute; top: 545px; left: 36px; height: 34px; background: transparent; width: 232px; border-radius: 2%; border:1px solid transparent;";
+    screen3.style = "position: absolute;top: 850px;left: 127px;height: 75px;background: transparent;width: 510px;border-radius: 2%;border: 1px solid transparent;";
     screen3.onclick= function(){
                                     APICall("page2leftkey2");
                                     op.src = imges[2];
@@ -150,13 +150,13 @@ function page2func(op){
     document.getElementById("enviar").disabled = true;
 
     var left = document.getElementById("left");
-    left.style = "position: absolute;top: 270px;left: 8px;height: 52px;background: transparent;width: 35px;border-radius: 2%;border: 1px solid transparent;";
+    left.style = "position: absolute;top: 430px;left: 52px;height: 110px;background: transparent;width: 80px;border-radius: 2%;border: 1px solid transparent;";
 
     var right = document.getElementById("right");
-    right.style = "position: absolute;top: 270px;left: 274px;height: 52px;background: transparent;width: 35px;border-radius: 2%;border: 1px solid transparent;";
+    right.style = "position: absolute;top: 430px;left: 646px;height: 110px;background: transparent;width: 80px;border-radius: 2%;border: 1px solid transparent;";
 
     var slides = document.getElementById("slides");
-    slides.style = "position: absolute;top: 111px;left: 36px;height: 356px;background: transparent;width: 237px;border-radius: 2%;border: 1px solid transparent;";
+    slides.style = "position: absolute;top: 175px;left: 165px;height: 652px;background: transparent;width: 432px;border-radius: 2%;border: 1px solid transparent;";
 
     left.onclick = function(){APICall("page2leftkey3");
                             if(l>=0){slides.src = slides_img[l];
@@ -172,14 +172,14 @@ function page2func(op){
                               };
 
     var site = document.getElementById("site");
-    site.style = "position: absolute;top: 492px;left: 36px;height: 34px;background: transparent;width: 232px;border-radius: 2%;border: 1px solid transparent;";
+    site.style = "position: absolute;top: 840px;left: 125px;height: 80px;background: transparent;width: 512px;border-radius: 2%;border: 1px solid transparent;";
     site.onclick = function(){
                                 APICall("page2rightkey2");
                                 window.open(landing_page);
                                };
 
     var screen3 = document.getElementById("screen3");
-    screen3.style = "position: absolute;top: 544px;left: 36px;height: 34px;background: transparent;width: 232px;border-radius: 2%;border: 1px solid transparent;";
+    screen3.style = "position: absolute;top: 930px;left: 125px;height: 80px;background: transparent;width: 512px;border-radius: 2%;border: 1px solid transparent;";
     screen3.onclick= function(){
                                     APICall("page2rightkey3");
                                     op.src = imges[2];
@@ -205,37 +205,37 @@ function page3func(op){
     document.getElementById("enviar").disabled = false;
 
     var whatsapp = document.getElementById("whatsapp");
-    whatsapp.style = "position: absolute;top: 192px;left: 37px;height: 35px;background: transparent;width: 234px;border-radius: 2%;border: 1px solid transparent;";
+    whatsapp.style = "position: absolute;top: 350px;left: 123px;height: 77px;background: transparent;width: 515px;border-radius: 2%;border: 1px solid transparent;";
     whatsapp.onclick= function(){
                                     APICall("page3");
                                     window.open(whatsapp_link);
                                     };
 
     var back = document.getElementById("back");
-    back.style = "position: absolute;top: 530px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
+    back.style = "position: absolute;top: 900px;left: 83px;height: 76px;background: transparent;width: 215px;border-radius: 2%;border: 1px solid transparent;";
     back.onclick= function(){       APICall("page4");
                                     op.src = imges[1];
                                     page2func(op);
                                 };
 
     var name = document.getElementById("name");
-    name.style = "position: absolute;font-size: 15px;top: 330px;left: 100px;height: 23px;background: transparent;width: 189px;border-radius: 2%;border: 1px solid transparent;";
+    name.style = "position: absolute;font-size: 30px;top: 605px;left: 260px;height: 53px;background: transparent;width: 420px;border-radius: 2%;border: 1px solid transparent;";
     name.required = true;
 
     var phone = document.getElementById("phone");
-    phone.style = "position: absolute;font-size: 15px;top: 360px;left: 235px;height: 23px;background: transparent;width: 55px;border-radius: 2%;border: 1px solid transparent;";
+    phone.style = "position: absolute;font-size: 30px;top: 675px;left: 554px;height: 53px;background: transparent;width: 124px;border-radius: 2%;border: 1px solid transparent;";
     phone.required = true;
 
     var year = document.getElementById("year");
-    year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    year.onclick = function(){ year.style = "position: absolute;font-size: 15px;top: 391px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";}
+    year.style = "position: absolute;font-size: 30px;top: 743px;left: 95px;height: 53px;background: transparent; width: 585px;border-radius: 2%;border: 1px solid transparent;";
+    year.onclick = function(){ year.style = "position: absolute;font-size: 30px;top: 743px;left: 95px;height: 53px;background: white; width: 585px;border-radius: 2%;border: 1px solid transparent;";}
 
     var guest = document.getElementById("guest");
-    guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: transparent; width: 266px;border-radius: 2%;border: 1px solid transparent;";
-    guest.onclick = function(){guest.style = "position: absolute;font-size: 15px;top: 422px;left: 24px;height: 23px;background: white; width: 266px;border-radius: 2%;border: 1px solid transparent;";}
+    guest.style = "position: absolute;font-size: 30px;top: 810px;left: 95px;height: 53px;background: transparent; width: 585px;border-radius: 2%;border: 1px solid transparent;";
+    guest.onclick = function(){guest.style = "position: absolute;font-size: 30px;top: 810px;left: 95px;height: 53px;background: white; width: 585px;border-radius: 2%;border: 1px solid transparent;";}
 
     var enviar = document.getElementById("enviar");
-    enviar.style = "position: absolute;top: 475px;left: 43px;height: 36px;background: transparent;width: 233px;border-radius: 2%;border: 1px solid transparent;";
+    enviar.style = "position: absolute;top: 900px;left: 305px;height: 76px;background: transparent;width: 380px;border-radius: 2%;border: 1px solid transparent;";
     enviar.onclick= function(){
                                 name.required = true;
                                 phone.required = true;
